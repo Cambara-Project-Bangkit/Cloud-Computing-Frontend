@@ -272,26 +272,17 @@ ul > li:not(button) > a > h5:after{
     display: flex;
     flex-direction:column;
 }
-.section-heading-1 > div > .form-input > input{
-    border: 1px solid var(--cool-gray);
-    background-color: transparent;
-    border-radius: 20px;
-    padding: 0.5rem 0.925rem;
-    margin: 0.625rem 0;
-}
 .section-heading-1 > div > .form-input > button{
     border: 1px solid var(--haute);
     background-color: var(--haute);
     color: var(--white);
     border-radius: 20px;
-    padding: 0.5rem 0.925rem;
+    padding: 0.725rem 0.925rem;
     transition: var(--transition);
+    margin: 1rem 0;
 }
 .section-heading-1 > div > .form-input > button:hover{
     opacity: 70%;
-}
-.form-input > input::placeholder, .form-input > input::-webkit-input-placeholder{
-    color: var(--purple-fog);
 }
 .section-heading-1 > div:nth-child(2){
     text-align-last: center;
@@ -299,26 +290,8 @@ ul > li:not(button) > a > h5:after{
 }
 .section-heading-1 > div > img{
     max-width: 100%;
-    width: 50%;
+    width: 100%;
     margin-bottom: 2rem;
-}
-.shadow{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 100px;
-    position: absolute;
-    box-shadow: 0 5px 3px 0 rgba(0,0,0,0.3);
-    right: calc(100% - 268px);
-    bottom: 1rem;
-    transform: scaleX(3.5);
-}
-@media screen and (max-width: 1050px){
-    .shadow{
-        right: calc(100% - 165px);
-    }
-    .section-heading-1 > div > img{
-        width: 80%;
-    }
 }
 @media screen and (max-width: 700px) {
     .section-heading-1{
@@ -327,16 +300,8 @@ ul > li:not(button) > a > h5:after{
     .section-heading-1 > div > h1{
         font-size: clamp(2rem, 2.5rem, 2.85rem);
     }
-    .shadow{
-        width: 4.5rem;
-        height: 4.5rem;
-        right: calc(100% - 220px);
-    }
     .section-heading-1 > div:first-child{
         margin-top: 1rem;
-    }
-    .section-heading-1 > div > img{
-        width: 50%;
     }
 }
 
@@ -356,12 +321,22 @@ ul > li:not(button) > a > h5:after{
     text-align-last: center;
 }
 .section-heading-2 > div > img{
-    width: 50%;
+    width: 100%;
     max-height: 100%;
 }
 .section-heading-2 > div > h3{
     text-align: center;
     font-family: var(--ff-secondary);
+}
+@media screen and (max-width: 900px){
+    .section-heading-2{
+        gap: 10%;
+        padding: 4rem;
+    }
+    .section-heading-2 > div > h3{
+        margin-top: 0.825rem;
+        font-size: clamp(1rem,1.25rem,1.5rem);
+    }
 }
 @media screen and (max-width: 700px) {
     .section-heading-2{
@@ -370,6 +345,7 @@ ul > li:not(button) > a > h5:after{
     }
     .section-heading-2 > div > h3{
         margin-top: 0.825rem;
+        font-size: clamp(0.725rem,1rem,1.5rem);
     }
 }
 
@@ -594,8 +570,8 @@ ul > li:not(button) > a > h5:after{
     font-weight: 400;
 }
 @media screen and (max-width: 767px) {
-    .section-heading-8, .section-heading-7, .section-heading-6, .section-heading-3, .section-heading-4, .section-heading-5, .section-heading-1{
-        padding: 4rem 2rem;
+    .section-heading-8, .section-heading-6, .section-heading-3, .section-heading-4, .section-heading-5, .section-heading-1{
+        padding: 4rem 3rem;
     }
     .box-faq{
         width: 60vw;
@@ -606,6 +582,7 @@ ul > li:not(button) > a > h5:after{
 .section-heading-7{
     text-align: start;
     padding: 4rem 6rem;
+    display: flex;
 }
 
 .section-heading-7 > div:nth-child(2){
@@ -613,16 +590,27 @@ ul > li:not(button) > a > h5:after{
     flex-direction: row;
     justify-content: end;
     text-align: center;
-    margin: 2rem 0 0 0;
 }
 .section-heading-7 > div:nth-child(2) > div > img{
     max-height: 100%;
     max-width: 100%;
-    width: 50%;
+    width: 100%;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:950px) {
+    .section-heading-7{
+        flex-direction: column;
+    }
+    .section-heading-7 > div:nth-child(2){
+        margin: 1.625rem 0 0 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .section-heading-7{
+        flex-direction: column;
+        padding: 4rem 3rem;
+    }
     .section-heading-7 > div:nth-child(2) > div > img{
-        width: 90%;
+        width: 60%;
         margin: 1rem 0 0 0;
     }
     .section-heading-7 > div:nth-child(2){
@@ -734,7 +722,8 @@ ul > li:not(button) > a > h5:after{
 }
 .footer-top-socialmedia i{
     font-size: 1.525rem;
-    color: var(--tutu);
+    color: var(--haute);
+    opacity: 70%;
     margin: 0 1rem;
 }
 .footer-top-socialmedia i:hover{
@@ -757,7 +746,6 @@ ul > li:not(button) > a > h5:after{
         align-items: flex-start;
     }
     .footer-first > div > img{
-        padding: 0 0 1rem 0;
         width: 70%;
     }
     .footer-first > div > p, .footer-first > div > h6, .footer-first > div > a > h6{
@@ -785,6 +773,11 @@ ul > li:not(button) > a > h5:after{
     }
     .footer-end{
         padding: 1rem;
+    }
+}
+@media screen and (max-width: 460px) {
+    .footer-first > div > img{
+        width: 50%;
     }
 }
 
