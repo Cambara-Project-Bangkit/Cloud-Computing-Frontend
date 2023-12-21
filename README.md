@@ -4,7 +4,7 @@
 https://cambara-v4v5u72orq-et.a.run.app/
 
 ## Demo Video
-  ![animation](https://github.com/Cambara-Project-Bangkit/Cloud-Computing-Frontend/assets/114889196/795f4061-fdd7-405c-8cca-1a03afdec106)
+![animation-landing-page](https://github.com/Cambara-Project-Bangkit/Cloud-Computing-Frontend/assets/114889196/c7b79756-ce27-4fb5-8f1b-aa5f231f206b)
 
 ## Installation
 ### Clone the repository: 
